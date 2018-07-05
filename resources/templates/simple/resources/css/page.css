@@ -19,6 +19,7 @@ h1 img{
 	padding:3px;
 	background-color:white;
 	border-radius: 10px;
+	cursor:pointer;
 }
 h1 img:hover{
 	border:3px solid black;
@@ -49,9 +50,8 @@ nav{
 	position:absolute;
 	top:61px;
 	left:3px;
-	display:block;
+	display:none;
 	z-index:50;
-
 }
 nav ul{
 	list-style: none;
@@ -76,6 +76,9 @@ nav a:hover{
 	border:3px solid black;
 	padding:1px;
 	border-radius: 0px;
+}
+footer{
+	
 }
 @media (pointer: coarse) {
 	body{

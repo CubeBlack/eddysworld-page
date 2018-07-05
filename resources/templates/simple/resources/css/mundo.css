@@ -1,0 +1,30 @@
+@font-face {
+     font-family: helveticaneue;
+     src: url('LHANDW.TTF');
+}
+#content{
+	background-color:rgba(255,255,255,0.8);
+	font:36px helveticaneue, Arial, Tahoma, Sans-serif;
+	position:absolute;
+	left:12px;
+	padding:3px;
+	margin:3px;
+	width:calc(100% - 12);
+	overflow:scroll;
+}
+#content div{
+	padding:3px;
+	border: 2px solid gray;
+	margin: 3px;
+	height:400px;
+	opacity: .8; 
+}
+#content #d1{
+	background: linear-gradient(to bottom, white , black);
+}
+#content #d2{
+	background: linear-gradient(to bottom, black , purple);
+}
+#content #d3{
+	background: linear-gradient(to bottom, purple , blue);
+}

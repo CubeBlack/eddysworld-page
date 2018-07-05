@@ -5,7 +5,7 @@ $content = $BTS->TemplateExport("content");
  
 
 $BTS->TemplateDefine(array(
- 'website.subtitle' => "Home",
+ 'website.page' => "Grimorio",
  'website.content' => $content
 ));
 
