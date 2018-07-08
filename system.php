@@ -32,6 +32,7 @@
 	$BTS->TemplateDefine(array(
 		'website.title' => "Eddys World",
 		'website.nav.item' => $itens,
+		'website.nav-adm.item' => "<li>Ferramentas administrativas</li>",
 	));
 
 	

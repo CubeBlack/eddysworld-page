@@ -1,0 +1,103 @@
+/*Copiado de base.css*/
+#display-base{
+	position:fixed;
+	top:90px;
+	left:10px;
+	height:calc(100% - 100px);
+	width:calc(60% - 20px);
+	border:1px solid black;
+}
+#options{
+	position:fixed;
+	top:10px;
+	right:10px;
+	height:calc(80% - 20px);
+	width:calc(40% - 20px);
+	border:1px solid red;
+	background-color:rgba(255,255,255,0.9);
+	padding:5px;
+	overflow:scroll;
+}
+#options input{
+	width:80px;
+}
+#options div{
+	border-top:1px solid black;
+	padding-bottom:5px;
+}
+#options label{
+	color:blue;
+}
+#proprieades-go{
+	display:none;
+}
+#terminal{
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	height:calc(20% - 20px);
+	width:calc(40% - 20px);
+	border:1px solid red;
+	background-color:rgba(255,255,255,0.9);		
+}
+#terminal content{
+	position:absolute;
+	height:calc(100% - 20px);
+	
+}
+#terminal #imp{
+	position:absolute;
+	bottom:0;
+	height:20px;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+/*copiado de view.css*/
+#display{
+	overflow:hidden;
+	font-size:12px;
+	height:100%;
+	background-color:rgba(255,255,255,0.9);
+}
+#display-com{
+	position:absolute;
+	right:0;
+	top:0;
+	text-align:right;
+}
+#terminal-log{
+	overflow:scroll;
+	height:100%;
+	width:100%;
+}
+#display-com input{
+	width:20px;
+}
+#display-com label{
+	color: red;
+}
+.innert{
+	position:absolute;
+	border:1px solid blue;
+	background-color:rgba(50,50,255,0.5);
+	cursor:pointer;
+}
+.innert:hover{
+	position:absolute;
+	border:1px solid red;
+	background-color:pink;
+}
+.peaple{
+	
+}
+.grid-zero{
+	position:absolute;
+	border:1px solid gray;
+}
+.grid{
+	position:absolute;
+	border-bottom:1px solid gray;
+	border-right:1px solid gray;
+}
+/* ------ */

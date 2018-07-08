@@ -1,6 +1,7 @@
 page = [];
-page.server = "https://localhost/EddysWorld/server/eddysworld_server.term.php";
-page.server = "http://limapage.esy.es/servers/eddysworld-server/eddysworld_server.term.php";
+page.server = "https://localhost/eddysworld-server/eddysworld_server.term.php";
+//page.server = "https://localhost/EddysWorld/server/eddysworld_server.term.php";
+//page.server = "http://limapage.esy.es/servers/eddysworld-server/eddysworld_server.term.php";
 term = new Terminal();
 
 term.server = page.server;
