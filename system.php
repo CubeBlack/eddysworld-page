@@ -11,6 +11,7 @@
 	$menu[] = array("Inicio","index.php");
 	$menu[] = array("Mundo","mundo.php");
 	$menu[] = array("Mapa","mapa.php");
+	$menu[] = array("Dilogo","dialogo.php");
 	$menu[] = array("Itens","itens.php");
 	$menu[] = array("Forum","forum.php");
 	$menu[] = array("Usuarios","usuarios.php");

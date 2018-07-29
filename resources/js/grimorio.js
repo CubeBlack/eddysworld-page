@@ -8,7 +8,7 @@ grimorio.inputEnter = function (event){
 	var keynum;
 	if(window.event) { //IE
 		keynum = event.keyCode
-	} else if(event.which) { // Netscape/Firefox/Opera AQUI ESTAVA O PEQUENINO ERRO ao invés de "e." é "event."
+	} else if(event.which) { // Netscape/Firefox/Opera
 		keynum = event.which
 	}
 	if( keynum == 13 ) {
@@ -19,7 +19,7 @@ grimorio.inputEnter = function (event){
 grimorio.com = function(){
 	msg = this.comandInp.value;
 	this.setContent(msg,"sended");
-	msg = "grimorio.ouvir(" + term.toStr(msg) + ")";
+	msg = "grimorio.ouvir(" + term.toStr(msg) + ");";
 	
 	term.com(msg,grimorio.receved);
 	this.comandInp.value = "";

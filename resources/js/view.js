@@ -73,7 +73,7 @@ view.loop = function(){
 		window.setTimeout(view.loop(),view.mFps);
 	}
 			
-	termView.com("world.show(json)",receved);
+	termView.com("world.show(json);",receved);
 }
 view.rewrite = function(){
 	view.dlx.innerHTML = view.x;

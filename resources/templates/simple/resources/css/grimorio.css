@@ -15,7 +15,7 @@
 	width:calc(100% - 12px);
 	height:calc(100% - 20px);
 	display:block;
-	overflow:hidden;
+	overflow:scroll;
 }
 #query{
 	position:absolute;
@@ -30,22 +30,21 @@
 	padding:3px;
 	margin:3px;
 }
+#grimorio-sended,#grimorio-receved{
+	padding:3px;
+	margin:3px;
+	border-radius: 10px;
+	white-space:pre-wrap;
+}
 #grimorio-sended{
 	text-align:right;
 	background-color:rgba(100,255,100,0.8);
-	padding:3px;
-	margin:3px;
-	margin-left:100px;
-	border-radius: 10px;
 	border-bottom-right-radius: 0px;
-	float:right;
+	/*float:right;*/
 }
 #grimorio-receved{
 	text-align:left;
 	background-color:rgba(100,100,255,0.8);
-	padding:3px;
-	margin:3px;
-	border-radius: 10px;
 	border-bottom-left-radius: 0px;
-	float:left;
+	/*float:left;*/
 }

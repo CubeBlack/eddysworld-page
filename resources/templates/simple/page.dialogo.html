@@ -1,0 +1,36 @@
+<script src="resources/js/dialogos.js" charset="utf-8"></script>
+<style type="text/css">
+#dialogos{
+	position:fixed;
+	top:90px;
+	left:10px;
+	height:calc(100% - 100px);
+	width:calc(100% - 20px);
+	border:1px solid black;
+	background-color:rgba(255,255,255,0.9);
+	padding: 3px;
+	overflow:scroll;
+}
+dialogo{
+	display:block;
+	padding:3px;
+	border:1px solid black;
+	margin:3px;
+	
+}
+dialogo-p1, dialogo-p2, dialogo-p3{
+	display: table-cell;
+	padding:3px;
+	margin:3px;
+}
+  </style>
+<section>
+	Pesquisar frase
+</section>
+<section id="dialogos">
+	Frazes mais utilizadas no jogo.
+</section>
+<script>
+	//dialogos.search();
+	dialogos.loaded();
+</script>
