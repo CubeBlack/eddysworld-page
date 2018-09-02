@@ -1,12 +1,15 @@
 <?php
-include "system.php";
-$BTS->TemplateLoad(array('content' => "page.mundo.html"));
-$content = $BTS->TemplateExport("content");
- 
+$pageTitle = "EW - Mundo";
+include "openingPage.php";
 
-$BTS->TemplateDefine(array(
- 'website.page' => "Mundo",
- 'website.content' => $content
-));
 
-echo $BTS->TemplateExport("page");
+?>
+<!-------------------- onteudo -->
+	<section id="conteudo">
+		<div></div>
+	</section>
+<!-------------------- onteudo -->
+<?php
+
+include "endingPage.php";
+	

@@ -1,0 +1,58 @@
+#conteudo{
+	background-color: rgba(255,255,255,0.8);
+	position: fixed;
+	right: calc(50% - 250px);
+	height: calc(100% - 130px);
+	width: 500px;	
+	box-shadow: 5px 5px rgba(100,100,100,0.8);
+	border-radius: 5px;
+	padding: 3px;
+	margin: 3px;
+}
+#view{
+	width: 100%;
+	height: calc(100% - 40px);
+	border-radius: 5px;
+	padding: 3px;
+	margin: 3px;
+	border:1px solid black;
+	//background-image:url("../img/logo completo.png");
+	overflow: hidden;
+}
+#query{
+	width: 100%;
+}
+#query input{
+	width: 100%;
+}
+#envidao,#recebido{
+	padding: 3px;	
+}
+#envido{
+	background-color: rgba(100,255,255,0.8);
+}
+#envido{
+	background-color: rgba(255,255,255,0.8);
+}
+#view div{
+	border-radius: 5px;
+	padding: 3px;
+	margin: 3px;
+	white-space: pre-wrap;
+}
+
+#intro{
+	text-align: center;
+	background-color: rgba(255,255,255,0.8);
+}
+.system{
+	background-color: rgba(255,0,255,0.8);
+	
+}
+.send{
+	background-color: rgba(255,0,255,0.8);
+	
+}
+.recevid{
+
+}

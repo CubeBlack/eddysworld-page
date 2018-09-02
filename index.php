@@ -1,12 +1,27 @@
 <?php
-include "system.php";
-$BTS->TemplateLoad(array('content' => "page.grimorio.html"));
-$content = $BTS->TemplateExport("content");
- 
+$pageTitle = "Eddy's world - Play Now";
+include "openingPage.php";
 
-$BTS->TemplateDefine(array(
- 'website.page' => "Grimorio",
- 'website.content' => $content
-));
 
-echo $BTS->TemplateExport("page");
+?>
+<!-------------------- onteudo -->
+		<link rel="stylesheet" type="text/css" href="css/chat.css">
+		<section id="conteudo">
+				<div id="view">
+					<div id="intro">
+						<h1>Bem vindo a um novo mundo!</h1>
+						<p>Para saber mais sobre os tipos de dialogos...</p>					
+						<p>Para saber mais sobre os tipos de dialogos...</p>					
+						<p>Para saber mais sobre os tipos de dialogos...</p>					
+					</div>			
+				</div>
+				<div id="query">
+					<input type="text" id="comandInp" onKeyPress = "grimorio.inputEnter(event)" autofocus>				
+				</div>
+		</section>
+		<script src="js/grimorio.js" charset="utf-8"></script>
+<!-------------------- onteudo -->
+<?php
+
+include "endingPage.php";
+	

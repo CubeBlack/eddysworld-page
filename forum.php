@@ -1,12 +1,23 @@
 <?php
-include "system.php";
-$BTS->TemplateLoad(array('content' => "page.mundo.html"));
-$content = $BTS->TemplateExport("content");
- 
 
-$BTS->TemplateDefine(array(
- 'website.page' => "Mundo",
- 'website.content' => $content
-));
+	if(!isset($_GET['tipo'])) $tipo = "pesquisa";
+		else $tipo = $_GET['tipo'];
+	if(!isset($_GET['titulo'])) $titulo = "";
+		else $titulo = $_GET['titulo'];
 
-echo $BTS->TemplateExport("page");
+	$pageTitle = "EW | Forum[$tipo] : $titulo";
+	include "openingPage.php";
+?>
+<!-------------------- onteudo -->
+	<link rel="stylesheet" type="text/css" href="css/forum.css">
+	<section id="content">
+		<div id="display">{display}</div>
+		<div id="coments">{post}</div>
+		<div id="coments">{comentes}</div>
+	</section>
+	<script><?php echo "tipo='$tipo';titulo='$titulo';"?></script>
+	<script src="js/forum.js" charset="utf-8"></script>
+<!-------------------- onteudo -->
+<?php
+	include "endingPage.php";
+	
