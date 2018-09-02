@@ -14,7 +14,7 @@ dialogo.rListar = function (msg) {
 }
 dialogo.tDialogo = "<a href='forum.php?tipo=dialogo&titulo={entrada}'>{entrada}</a>";
 dialogo.listar = function () {
-	term.com("dialogo.listar();",dialogo.rListar);
+	term.com("dialogo.listar( ,json);",dialogo.rListar);
 }
 dialogo.listar();
 console.log("js/dialogoNuvem.js");
