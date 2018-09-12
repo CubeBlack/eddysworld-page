@@ -1,11 +1,13 @@
-#content{
+#entradanuvem{
+	position:absolute;
 	background-color: rgba(255,255,255,0.8);
 	border:1px solid balack;
 	padding: 3px;
 	margin: 3px;
-	height: calc(100% - 130px);
+	width:calc(100% - 220px);
+	overflow:scroll;
 }
-#content a{
+#entradanuvem a{
 	text-decoration: none;
 	border: 1px solid black;
 	background-color: white;
@@ -16,7 +18,7 @@
 	text-align: center;
 	color: blue;
 }
-#content a:hover{
+#entradanuvem a:hover{
 	padding: 1px;
 	border:3px solid purple;
 	color: purple;

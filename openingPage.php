@@ -24,10 +24,13 @@
 				<ul>
 					<a href="index.php"><li class="menu-item-opened">Inicio</li></a>		
 					<a href="mapa.php"><li >Mapa</li></a>				
-					<a href="forum.php"><li>Forum</li></a>				
-					<a href="dialogos.php"><li>Dialogos</li></a>				
+					<a href="wiki.php"><li>Wiki</li></a>				
+					<a href="entradas.php"><li>Entradas</li></a>
+					<a href="quests.php"><li>Quests</li></a>
 					<a href="mundo.php"><li>Mundo</li></a>				
 					<a href="conta.php"><li>conta</li></a>				
 				</ul>
 			</nav>
-		</header>
+</header>
+
+<!-- meta http-equiv="refresh" content="5"-->

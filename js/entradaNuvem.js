@@ -1,5 +1,5 @@
 dialogo = [];
-dialogo.eleContent = document.getElementById("content");
+dialogo.eleContent = document.getElementById("entradanuvem");
 dialogo.rListar = function (msg) {
 	if (msg[0]!="[") {dialogo.eleContent.innerHTML = msg; return;};
 	objDialogos = JSON.parse(msg);
@@ -16,7 +16,8 @@ dialogo.rListar = function (msg) {
 	dialogo.eleContent.innerHTML = retorno;
 	return;
 }
-dialogo.tDialogo = "<a style='font-size:{tamanho}px;' href='forum.php?tipo=dialogo&titulo={entrada}'>{entrada}<SUP>{quantidade}</SUP></a>";
+//dialogo.tDialogo = "<a style='font-size:{tamanho}px;' href='forum.php?tipo=dialogo&titulo={entrada}'>{entrada}<SUP>{quantidade}</SUP></a>";
+dialogo.tDialogo = "<a style='font-size:{tamanho}px;'  onClick = 'entrada.get(\"{entrada}\")'>{entrada}<SUP>{quantidade}</SUP></a>";
 dialogo.listar = function () {
 	term.com("dialogo.listar( ,json);",dialogo.rListar);
 }
