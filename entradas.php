@@ -13,9 +13,7 @@
 			<a href="wiki.php?tipo=entrada&entada={entrada}">wiki</a>
 		</section>
 		<section id="saidas">
-			<div id="saidas-{}">
-				<textarea>{saida}</textarea>
-			</div>
+
 		</section>
 		<div id="comandos">
 			<input type="button" value="Salvar">

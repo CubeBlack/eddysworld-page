@@ -104,3 +104,28 @@ footer{
 	padding: 3px;
 	background-color: rgba(255,255,255,0.8);	
 }
+#content{
+	background-color: rgba(255,255,255,0.8);
+	position: fixed;
+	height: calc(100% - 130px);
+	width: calc(100% - 250px);	
+	box-shadow: 5px 5px rgba(100,100,100,0.8);
+	border-radius: 5px;
+	padding: 3px;
+	margin: 3px;
+}
+#side{
+	background-color: rgba(255,255,255,0.8);
+	position: fixed;
+	height: calc(100% - 130px);
+	right: 3px;
+	width: 200px;	
+	box-shadow: 5px 5px rgba(100,100,100,0.8);
+	border-radius: 5px;
+	padding: 3px;
+	margin: 3px;
+	overflow:scroll;
+}
+#conteudo{
+
+}

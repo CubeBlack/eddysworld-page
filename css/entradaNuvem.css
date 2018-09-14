@@ -17,6 +17,7 @@
 	min-width: 50px;
 	text-align: center;
 	color: blue;
+	cursor:pointer;
 }
 #entradanuvem a:hover{
 	padding: 1px;

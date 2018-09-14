@@ -1,4 +1,13 @@
 entrada = [];
+function autoResize(ele)
+{
+    //objTextArea = document.getElementById('txtTextArea');
+    while(ele.scrollHeight > ele.offsetHeight){
+        ele.rows += 1;
+    }
+
+	console.log(ele.scrollHeight);
+}
 entrada.rGet = function(msg){
 	//console.log(msg);
 	obj = JSON.parse(msg);
@@ -22,5 +31,5 @@ entrada.salvar = function(){
 entrada.eleDisplay = document.getElementById("display");
 entrada.tdisplay = "<h2>{entrada}</h2><p>uso: {entrada.uso}</p><a href=\"wiki.php?title={entrada}/\">wiki</a>";
 entrada.eleSaidas = document.getElementById("saidas");
-entrada.tsaida = "<textarea>{saida}</textarea>";
+entrada.tsaida = "<textarea onkeydown=\"autoResize(this)\">{saida}</textarea>";
 console.log("entradaEdit.js");

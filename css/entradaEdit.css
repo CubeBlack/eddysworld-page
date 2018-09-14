@@ -11,3 +11,9 @@
 #saidas div{
 	border-top:1px solid black;
 }
+#saidas textarea{
+	//resize: none;
+    width:100%;
+    //height:100px;
+    //overflow-y: auto;
+}

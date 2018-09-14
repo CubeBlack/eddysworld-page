@@ -29,4 +29,8 @@ page.replace = function(base,dados){
 	return base;
 }
 //----------------------
+page.open = function (url) {
+	window.location.href = url;
+}
+//------------
 console.log("/js/page.js");
