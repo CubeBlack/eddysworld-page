@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="css/mapa.css">
+<link rel="stylesheet" type="text/css" href="css/view.css">
 <?php
 $pageTitle = "EW | Mapa Mund";
 include "openingPage.php";
@@ -5,8 +7,7 @@ include "openingPage.php";
 
 ?>
 <!-------------------- onteudo -->
-	<link rel="stylesheet" type="text/css" href="css/mapa.css">
-	<link rel="stylesheet" type="text/css" href="css/view.css">
+
 	<section id="mapa">
 		<div id="view"></div>
 		<div id="menu-view">
