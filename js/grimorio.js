@@ -16,23 +16,25 @@ grimorio.inputEnter = function (event){
 }
 //--------------------------
 grimorio.rEnviar = function (msg) {
-	grimorio.setMsg(msg);
+	grimorio.setMsg(msg,"receved");
 }
 grimorio.enviar = function (msg,mudo=false) {
 	term.com(page.replace(grimorio.tEnviar,{"msg":msg}),grimorio.rEnviar);
 	if (!mudo) {
-		grimorio.setMsg(msg);
+		grimorio.setMsg(msg,"sended");
 	}
 }
 grimorio.tEnviar = "grimorio.ouvir({msg})";
 //-------------------------------
 grimorio.setMsg = function (msg,tipo="system") {
-	template=grimorio.tMsg["system"];
+	template=grimorio.tMsg[tipo];
 	grimorio.eleView.innerHTML += page.replace(template,{"msg":msg});
 	grimorio.eleView.scrollTop = grimorio.eleView.scrollHeight;
 }
 grimorio.tMsg = {};
 grimorio.tMsg["system"] = "<div class='system'>{msg}</><div></div>";
+grimorio.tMsg["receved"] = "<div class='receved'>{msg}</><div></div>";
+grimorio.tMsg["sended"] = "<div class='send'>{msg}</><div></div>";
 
 
 

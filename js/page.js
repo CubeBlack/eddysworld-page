@@ -2,7 +2,17 @@ term = new Terminal();
 //--------  declarar terminal
 term.server = "http://localhost/eddysworld-server/eddysworld_server.term.php";
 term.on();
-
+///--------- pegar valores da URL
+var query = location.search.slice(1);
+var partes = query.split('&');
+var data = {};
+partes.forEach(function (parte) {
+    var chaveValor = parte.split('=');
+    var chave = chaveValor[0];
+    var valor = chaveValor[1];
+    data[chave] = valor;
+});
+///--------------
 var page = [];
 page.loaded = function() {
 	//term.com("user",function(msg){console.log(msg)});

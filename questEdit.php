@@ -1,11 +1,15 @@
-<link rel="stylesheet" type="text/css" href="css/edit.css">
+<link rel="stylesheet" type="text/css" href="css/questEdit.css">
 <?php
 $pageTitle = "EW - QuetEdit";
 include "openingPage.php";
 ?>
 <!-------------------- onteudo -->
 	<section id="content">
-		
+		<div id = "display">
+			<h2>{id} - {nome}</h2>
+			<p>{descricao}</p>
+		</div>
+		<div id="versiculo">{versiculo}</div>
 	</section>
 	<section id="side">
 	

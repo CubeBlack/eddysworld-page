@@ -3,7 +3,7 @@ dialogo.eleContent = document.getElementById("entradanuvem");
 dialogo.rListar = function (msg) {
 	if (msg[0]!="[") {dialogo.eleContent.innerHTML = msg; return;};
 	objDialogos = JSON.parse(msg);
-	console.log(objDialogos[0].entrada);
+	//console.log(objDialogos[0].entrada);
 	retorno = "";
 	for (i = 0; i < objDialogos.length;i++) {
 		dados = {
