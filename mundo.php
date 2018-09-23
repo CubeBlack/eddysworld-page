@@ -5,11 +5,10 @@ include "openingPage.php";
 
 ?>
 <!-------------------- onteudo -->
-	<section id="conteudo">
-		<div></div>
-	</section>
+<section id="conteudo">
+    <div></div>
+</section>
 <!-------------------- onteudo -->
 <?php
 
 include "endingPage.php";
-	
