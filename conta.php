@@ -9,6 +9,32 @@
     <section id="conta.displayUser">
 
     </section>
+    <section id="contaformnew">
+        <form>
+            <p>
+                <label>Usuario</label><br>
+                <input id="conta.formnew.user" type="text">
+            </p>
+            <p>
+                <label>Personagem</label><br>
+                <input id="conta.formnew.user" type="text">
+            </p>
+            <p>
+                <label>Senha</label><br>
+                <input id="conta.formnew.pass" type="text">
+            </p>
+            <p>
+                <label>Redigite a mesma senha</label><br>
+                <input id="conta.formnew.pass" type="text">
+            </p>
+            <p>
+                <!--
+				<button onclick="conta.logar();" >Emtrar</button>
+				-->
+                <input type="button" value="Criar" onclick="conta.New();">
+            </p>
+        </form>
+    </section>
     <section id="conta.formlogin">
         <form>
             <p>
@@ -24,13 +50,18 @@
 				<button onclick="conta.logar();" >Emtrar</button>
 				-->
                 <input type="button" value="Entrar" onclick="conta.logar();">
+                <input type="button" value="NovaConta" onclick="conta.logar();">
             </p>
         </form>
     </section>
     <!-- Dados da conta -->
-    <section id="">
+    <section id="divpersonagem">
+        <img id="personagemstatus" src="img/personagem.svg">
         <div>
-            Personagem/status
+            {per.nome}
+            <p>{per.inteligencia} of inteligency|{per.strong} of strong |{per.speed} of Speed</p>
+            <p>{per.equipamento}</p>
+            <p>{per.invenrorio}</p>
         </div>
         <div>
             Usuario

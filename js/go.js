@@ -1,15 +1,15 @@
-go = [];
+var go = [];
 
 go.propriedades = function(id){
 	
-	receved = function(msg){
+	var receved = function(msg){
 		
 		go.pAcoes.innerHTML += '<input type="button" onclick="go.atualizar()" value="Atualizar">';
 		go.pAcoes.innerHTML += '<input type="button" onclick="go.apagar()" value="Apagar">';
 		go.pAcoes.innerHTML += '<input type="button" onclick="go.cancelar()" value="Cancelar">';
-		tGo = JSON.parse(msg);
+		var tGo = JSON.parse(msg);
 		go.pGo.style.display = "block";
-		go.pGo_id.value = tGo.id;
+		go.pGo_id.value = tGo.go_id;
 		go.pGo_x.value = tGo.position.x;
 		go.pGo_y.value = tGo.position.y;
 		go.pGo_width.value = tGo.tamanho.x;
@@ -26,7 +26,7 @@ go.propriedades = function(id){
 		}
 	}
 	go.cancelar();
-	com = "go.get("+id+")";
+	var com = "go.get("+id+",json)";
 	term.com(com,receved);
 	//conso.addLog(com);
 }
@@ -37,7 +37,7 @@ go.novo = function(){
 	go.pAcoes.innerHTML = '<input type="button" onclick="go.salvar()" value="Salvar"><input type="button" onclick="go.cancelar()" value="Cancelar">';
 }
 go.salvar = function(){
-	receved = function(msg){
+	var receved = function(msg){
 		//conso.addLog(msg,"");
 		console.log(msg);
 		console.log(term.ultimoRequerimentoDoServidor);
@@ -141,6 +141,9 @@ go.apagar = function(){
 	com = "go.drop("+go.pGo_id.value+")";
 	term.com(com,receved);
 	//conso.addLog(com);
+}
+go.getPersongem = function (){
+    
 }
 
 	go.pGo = document.getElementById("proprieades-go");

@@ -8,3 +8,9 @@ div{
 	margin: 3px;
 	border-top: 1px solid black;
 }
+#contaformnew{
+  display: none;
+}
+#personagemstatus{
+    height: 250px;
+}

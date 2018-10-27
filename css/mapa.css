@@ -40,7 +40,7 @@
 	box-shadow: 5px 5px rgba(100,100,100,0.8);
 	text-align: right;
 }
-#menu-view input{
+#menu-view input[type=button]{
 	width: 30px;
 	height: 30px;
 }
